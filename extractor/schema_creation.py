@@ -20,7 +20,12 @@ def test_connection():
 		cursor.execute("create schema if not exists staging;")
 		cursor.execute("create schema if not exists marts;")
 
-		print(f"Схемы созданы")
+		conn.commit()
+
+		cursor.execute("select current_database()")
+		db_name = cursor.fetchone()
+
+		print(f"Схемы созданы в базе {db_name}")
 
 		cursor.close()
 		conn.close()
