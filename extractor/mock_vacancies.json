@@ -1,0 +1,67 @@
+[
+  {
+    "id": "1001",
+    "name": "Python Developer",
+    "published_at": "2025-04-18T10:00:00+0300",
+    "alternate_url": "https://hh.ru/vacancy/1001",
+    "salary": {"from": 150000, "to": 200000, "currency": "RUR"},
+    "employer": {"name": "Яндекс"},
+    "snippet": {
+      "requirement": "Опыт работы с Python от 3 лет. Знание SQL.",
+      "responsibility": "Разработка и поддержка ETL-пайплайнов."
+    },
+    "area": {"name": "Москва"}
+  },
+  {
+    "id": "1002",
+    "name": "Data Engineer",
+    "published_at": "2025-04-18T11:00:00+0300",
+    "alternate_url": "https://hh.ru/vacancy/1002",
+    "salary": {"from": 180000, "to": 250000, "currency": "RUR"},
+    "employer": {"name": "Сбер"},
+    "snippet": {
+      "requirement": "Опыт с Airflow, dbt, Spark. Python обязателен.",
+      "responsibility": "Построение Data Platform."
+    },
+    "area": {"name": "Москва"}
+  },
+  {
+    "id": "1003",
+    "name": "Python Backend Developer",
+    "published_at": "2025-04-17T09:00:00+0300",
+    "alternate_url": "https://hh.ru/vacancy/1003",
+    "salary": null,
+    "employer": {"name": "Озон"},
+    "snippet": {
+      "requirement": "FastAPI, PostgreSQL, Docker.",
+      "responsibility": "Разработка микросервисов."
+    },
+    "area": {"name": "Санкт-Петербург"}
+  },
+  {
+    "id": "1004",
+    "name": "Analytics Engineer",
+    "published_at": "2025-04-17T14:00:00+0300",
+    "alternate_url": "https://hh.ru/vacancy/1004",
+    "salary": {"from": 200000, "to": null, "currency": "RUR"},
+    "employer": {"name": "Авито"},
+    "snippet": {
+      "requirement": "dbt, SQL, Python. Опыт построения DWH.",
+      "responsibility": "Разработка моделей данных в dbt."
+    },
+    "area": {"name": "Москва"}
+  },
+  {
+    "id": "1005",
+    "name": "Data Scientist",
+    "published_at": "2025-04-16T16:00:00+0300",
+    "alternate_url": "https://hh.ru/vacancy/1005",
+    "salary": {"from": 160000, "to": 220000, "currency": "RUR"},
+    "employer": {"name": "VK"},
+    "snippet": {
+      "requirement": "Python, pandas, sklearn. Опыт A/B тестирования.",
+      "responsibility": "Построение ML-моделей."
+    },
+    "area": {"name": "Москва"}
+  }
+]
