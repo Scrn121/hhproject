@@ -3,11 +3,13 @@ import json
 import psycopg2
 from dotenv import load_dotenv
 from datetime import datetime
+from mock_generator import generate_vacancies
 
 load_dotenv()
 
-def get_vacancies() -> list:
-	mock_path = os.path.join(os.path.dirname(__file__), "mock_vacancies.json")
+def get_vacancies(n: int = 20) -> list:
+	#mock_path = os.path.join(os.path.dirname(__file__), "mock_vacancies.json")
+	return generate_vacancies(n)
 
 	with open (mock_path, "r", encoding="UTF-8") as f:
 		return json.load(f)
