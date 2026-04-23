@@ -1,0 +1,12 @@
+hh_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: "{{ env_var('HH_POSTGRES_HOST', 'localhost') }}"
+      port: "{{ env_var('HH_POSTGRES_PORT', '5432') | int }}"
+      user: "{{ env_var('HH_POSTGRES_USER', 'hh_user') }}"
+      password: "{{ env_var('HH_POSTGRES_PASSWORD', 'hh_password') }}"
+      dbname: "{{ env_var('HH_POSTGRES_DB', 'hh_database') }}"
+      schema: staging
+      threads: 4
