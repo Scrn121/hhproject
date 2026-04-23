@@ -9,3 +9,4 @@ airflow/logs/
 airflow/__pycache__/
 airflow.cfg
 airflow.db
+logs/
