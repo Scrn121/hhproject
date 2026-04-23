@@ -3,7 +3,7 @@ import json
 import psycopg2
 from dotenv import load_dotenv
 from datetime import datetime
-from mock_generator import generate_vacancies
+from extractor.mock_generator import generate_vacancies
 
 load_dotenv()
 
