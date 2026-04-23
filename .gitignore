@@ -4,3 +4,8 @@ __pycache__/
 *.pyc
 .vscode/
 *.log
+# Airflow
+airflow/logs/
+airflow/__pycache__/
+airflow.cfg
+airflow.db
