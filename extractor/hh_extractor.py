@@ -35,11 +35,11 @@ def parse_vacancy(vacancy:dict) -> dict:
 def get_db_connection():
 
 	return psycopg2.connect(
-	host="localhost",
-	port=os.getenv("POSTGRES_PORT"),
-	database=os.getenv("POSTGRES_DB"),
-	user=os.getenv("POSTGRES_USER"),
-	password=os.getenv("POSTGRES_PASSWORD")
+		host=os.getenv("POSTGRES_HOST", "localhost"),
+		port=os.getenv("POSTGRES_PORT", "5432"),
+		database=os.getenv("POSTGRES_DB", "hh_database"),
+		user=os.getenv("POSTGRES_USER", "hh_user"),
+		password=os.getenv("POSTGRES_PASSWORD", "hh_password")
 	)
 
 def save_vacancies(vacancies: list, conn) -> int:
