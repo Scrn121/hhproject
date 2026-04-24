@@ -112,6 +112,23 @@ services:
       timeout: 5s
       retries: 5
     restart: always
+  metabase:
+    image: metabase/metabase:latest
+    container_name: hh_metabase
+    ports:
+      - "3000:3000"
+    environment:
+      MB_DB_TYPE: postgres
+      MB_DB_DBNAME: metabase
+      MB_DB_PORT: 5432
+      MB_DB_USER: ${POSTGRES_USER}
+      MB_DB_PASS: ${POSTGRES_PASSWORD}
+      MB_DB_HOST: postgres
+    depends_on:
+      - postgres
+    restart: always
+    volumes:
+      - metabase_data:/metabase-data
 
   redis:
     image: redis:latest
@@ -297,3 +314,4 @@ services:
 volumes:
   postgres-db-volume:
   postgres_data:
+  metabase_data:
